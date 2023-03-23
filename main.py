@@ -16,9 +16,10 @@ for __name__ in "__main__":
         user_menu()
         user_input = int(input("Please enter an option:"))
         if user_input == 1:
-            encoder()
+            password = (input("Please enter your password to encode:"))
+            password = encoder(password)
+            print("Your password has been encoded and stored!")
         if user_input == 2:
             pass
         if user_input == 3:
             break
-
