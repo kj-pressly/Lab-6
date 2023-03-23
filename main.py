@@ -13,6 +13,8 @@ def user_menu():
 
 for __name__ in "__main__":
     user_play = True
+    password = ''
+    decoded_password = ''
     while user_play:
         user_menu()
         user_input = int(input("Please enter an option:"))
@@ -21,6 +23,7 @@ for __name__ in "__main__":
             password = encoder(password)
             print("Your password has been encoded and stored!")
         if user_input == 2:
-            password = decoder(password)
+            decoded_password = decoder(password)
+            print("The encoded password is " + password + ", and the original password is " + decoded_password+ ".\n")
         if user_input == 3:
             break
