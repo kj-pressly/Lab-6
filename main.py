@@ -1,4 +1,5 @@
 from encoder import encoder
+from decoder import decoder
 
 
 def user_menu():
@@ -20,6 +21,6 @@ for __name__ in "__main__":
             password = encoder(password)
             print("Your password has been encoded and stored!")
         if user_input == 2:
-            pass
+            password = decoder(password)
         if user_input == 3:
             break
