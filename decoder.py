@@ -6,5 +6,4 @@ def decoder(password):
             decoded += str((int(password[i]) + 7))
         else:
             decoded += str((int(password[i]) - 3))
-    print("The encoded password is " + password + ", and the original password is " + decoded + ".\n")
     return decoded
